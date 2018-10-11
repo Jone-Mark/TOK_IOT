@@ -1,0 +1,419 @@
+#title {
+    text-align: center;
+    /*让div内部文字居中*/
+    color: #336688;
+    margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 10%;
+    top: 3%;
+}
+
+#href1 {
+    position: absolute;
+    right: 10%;
+    height: 10%;
+    top: 12%;
+}
+
+#title1 {
+    /*标题1 开关*/
+    /*10+10+8*/
+    color: #336688;
+    top: 13%;
+    position: absolute;
+    left: 5%;
+    right: 0;
+    height: 18%;
+}
+
+.switch1 {
+    width: 180px;
+    height: 55px;
+    left: 5%;
+    position: absolute;
+    top: 31%;
+}
+
+.switch {
+    width: 180px;
+    height: 55px;
+    left: 30%;
+    position: absolute;
+    top: 31%;
+}
+
+
+#title2 {
+    /*标题2 数值*/
+    /*38+10*/
+    color: #336688;
+    position: absolute;
+    left: 5%;
+    right: 0;
+    height: 10%;
+    top: 41%;
+}
+
+#text {
+    /*数值区   48+40*/
+    /*20+40*/
+    position: absolute;
+    top: 51%;
+    left: 5%;
+    right: 5%;
+    margin: auto;
+    position: absolute;
+    width: 90%;
+    height: 37%;
+}
+
+#title3 {
+    /*标题3 图表*/
+    /*88+10+8*/
+    color: #336688;
+    position: absolute;
+    left: 5%;
+    right: 0;
+    height: 10%;
+    top: 91%;
+}
+
+#main {
+    /*图表区   106+40*/
+    position: absolute;
+    top: 109%;
+    left: 5%;
+    right: 5%;
+    width: 90%;
+    height: 40%;
+}
+
+#title4 {
+    /*标题4 地图API*/
+    /*146+10+8*/
+    color: #336688;
+    position: absolute;
+    left: 5%;
+    right: 0;
+    height: 10%;
+    top: 149%;
+}
+
+#container {
+    /*地图*/
+    /*167+50*/
+    position: absolute;
+    top: 167%;
+    left: 10%;
+    right: 10%;
+    width: 80%;
+    height: 50%;
+}
+
+#map_tips {
+    position: absolute;
+    top: 220%;
+    left: 10%;
+    right: 10%;
+    width: 80%;
+    height: 10%;
+    color: #336688;
+}
+
+#title5 {
+    /*标题5 图片流*/
+    /*220+10+8*/
+    color: #336688;
+    position: absolute;
+    left: 5%;
+    right: 0;
+    height: 10%;
+    top: 227%;
+}
+
+#video {
+    /*地图*/
+    /*245+50*/
+    position: absolute;
+    top: 245%;
+    left: 15%;
+    right: 15%;
+    width: 40%;
+    height: 50%;
+}
+
+#title6 {
+    /*标题5 天气情况*/
+    /*295+10+8*/
+    color: #336688;
+    position: absolute;
+    left: 5%;
+    right: 0;
+    height: 10%;
+    top: 295%;
+}
+
+#weather {
+    /*天气*/
+    /*305+40*/
+    position: absolute;
+    top: 305%;
+    bottom: 30% left: 10%;
+    right: 10%;
+    width: 80%;
+    height: 40%;
+}
+
+#forecast {
+    position: absolute;
+    color: #336688;
+    top: 10%;
+    /*bottom: 30%*/
+    left: 45%;
+
+}
+
+#liveweather {
+    position: absolute;
+    color: #336688;
+    top: 10%;
+    /*bottom: 30%*/
+    left: 0;
+}
+
+a {
+    font-weight: bold;
+    color: #336688;
+    color: #336688;
+    font-size: 20px;
+}
+
+/**/
+.switch1 input {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    -moz-opacity: 0;
+    opacity: 0;
+    z-index: 100;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.switch1 label {
+    display: block;
+    width: 80%;
+    height: 100%;
+    position: relative;
+    background: #1F2736;
+    /*#121823*/
+    background: linear-gradient(#121823, #161d2b);
+    border-radius: 30px 30px 30px 30px;
+    box-shadow:
+        inset 0 3px 8px 1px rgba(0, 0, 0, 0.5),
+        inset 0 1px 0 rgba(0, 0, 0, 0.5),
+        0 1px 0 rgba(255, 255, 255, 0.2);
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+
+}
+
+.switch1 input~label i {
+    display: block;
+    height: 51px;
+    width: 51px;
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    z-index: 2;
+    border-radius: inherit;
+    background: #283446;
+    /* Fallback */
+    background: linear-gradient(#36455b, #283446);
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.2),
+        0 0 8px rgba(0, 0, 0, 0.3),
+        0 12px 12px rgba(0, 0, 0, 0.4);
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.switch1 label+span {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 17px;
+    width: 18px;
+    height: 18px;
+    border-radius: 10px;
+    background: #283446;
+    background: gradient-gradient(#36455b, #283446);
+    box-shadow:
+        inset 0 1px 0 rgba(0, 0, 0, 0.2),
+        0 1px 0 rgba(255, 255, 255, 0.1),
+        0 0 10px rgba(185, 231, 253, 0),
+        inset 0 0 8px rgba(0, 0, 0, 0.9),
+        inset 0 -2px 5px rgba(0, 0, 0, 0.3),
+        inset 0 -5px 5px rgba(0, 0, 0, 0.5);
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+    z-index: 2;
+}
+
+/* Toggle */
+.switch1 input:checked~label+span {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border-radius: 10px;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+    z-index: 2;
+    background: #b9f3fe;
+    background: gradient-gradient(#ffffff, #77a1b9);
+    box-shadow:
+        inset 0 1px 0 rgba(0, 0, 0, 0.1),
+        0 1px 0 rgba(255, 255, 255, 0.1),
+        0 0 10px rgba(100, 231, 253, 1),
+        inset 0 0 8px rgba(61, 157, 247, 0.8),
+        inset 0 -2px 5px rgba(185, 231, 253, 0.3),
+        inset 0 -3px 8px rgba(185, 231, 253, 0.5);
+
+}
+
+.switch1 input:checked~label i {
+    left: auto;
+    left: 63%;
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.2),
+        0 0 8px rgba(0, 0, 0, 0.3),
+        0 8px 8px rgba(0, 0, 0, 0.3),
+        inset -1px 0 1px #b9f3fe;
+
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.switch input {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    -moz-opacity: 0;
+    opacity: 0;
+    z-index: 100;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.switch label {
+    display: block;
+    width: 80%;
+    height: 100%;
+    position: relative;
+    background: #1F2736;
+    /*#121823*/
+    background: linear-gradient(#121823, #161d2b);
+    border-radius: 30px 30px 30px 30px;
+    box-shadow:
+        inset 0 3px 8px 1px rgba(0, 0, 0, 0.5),
+        inset 0 1px 0 rgba(0, 0, 0, 0.5),
+        0 1px 0 rgba(255, 255, 255, 0.2);
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+
+}
+
+.switch input~label i {
+    display: block;
+    height: 51px;
+    width: 51px;
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    z-index: 2;
+    border-radius: inherit;
+    background: #283446;
+    /* Fallback */
+    background: linear-gradient(#36455b, #283446);
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.2),
+        0 0 8px rgba(0, 0, 0, 0.3),
+        0 12px 12px rgba(0, 0, 0, 0.4);
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+
+.switch label+span {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 17px;
+    width: 18px;
+    height: 18px;
+    border-radius: 10px;
+    background: #283446;
+    background: gradient-gradient(#36455b, #283446);
+    box-shadow:
+        inset 0 1px 0 rgba(0, 0, 0, 0.2),
+        0 1px 0 rgba(255, 255, 255, 0.1),
+        0 0 10px rgba(185, 231, 253, 0),
+        inset 0 0 8px rgba(0, 0, 0, 0.9),
+        inset 0 -2px 5px rgba(0, 0, 0, 0.3),
+        inset 0 -5px 5px rgba(0, 0, 0, 0.5);
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+    z-index: 2;
+}
+
+/* Toggle */
+.switch input:checked~label+span {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border-radius: 10px;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+    z-index: 2;
+    background: #b9f3fe;
+    background: gradient-gradient(#ffffff, #77a1b9);
+    box-shadow:
+        inset 0 1px 0 rgba(0, 0, 0, 0.1),
+        0 1px 0 rgba(255, 255, 255, 0.1),
+        0 0 10px rgba(100, 231, 253, 1),
+        inset 0 0 8px rgba(61, 157, 247, 0.8),
+        inset 0 -2px 5px rgba(185, 231, 253, 0.3),
+        inset 0 -3px 8px rgba(185, 231, 253, 0.5);
+
+}
+
+.switch input:checked~label i {
+    left: auto;
+    left: 63%;
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.2),
+        0 0 8px rgba(0, 0, 0, 0.3),
+        0 8px 8px rgba(0, 0, 0, 0.3),
+        inset -1px 0 1px #b9f3fe;
+
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+}
